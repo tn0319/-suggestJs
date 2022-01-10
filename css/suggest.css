@@ -1,0 +1,99 @@
+.suggest_con {
+    background: #f7f7f7;
+    padding: 20px;
+}
+.suggest_wrap {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.suggest_box {
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+    padding: 40px 20px 20px;
+}
+.suggest_box + .suggest_box {
+    margin-top: 20px;
+}
+.suggest_box .txt_wrap {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+}
+.suggest_box .info_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.suggest_box .info_wrap .info1 {
+    font-size: 14px;
+}
+.suggest_box .info_wrap .info1 span {
+    font-size: 16px;
+    color: #438eb9;
+    font-weight: 700;
+}
+.suggest_box .info_wrap .info2 .like .on {
+    display: none;
+}
+.suggest_box .info_wrap .info2 .like.on .on {
+    display: block;
+}
+.suggest_box .info_wrap .info2 .like.on .off {
+    display: none;
+}
+.suggest_box .info_wrap .info2 .modify,
+.suggest_box .info_wrap .info2 .delete {
+    font-size: 12px;
+    color: #9d9d9d;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    padding: 4px 8px;
+}
+.suggest_box .comment_wrap {
+    padding: 20px 0 0;
+}
+.suggest_box .comment_wrap li {
+    position: relative;
+}
+.suggest_box .comment_wrap li::after {
+    content: '✖️';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    cursor: pointer;
+}
+.suggest_box .comment_wrap li + li{
+    margin-top: 15px;
+}
+.suggest_box .comment_wrap li .anonym {
+    font-size: 12px;
+    color: #438eb9;
+}
+.suggest_box .comment_wrap li .comment {
+    font-size: 14px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.suggest_box .comment_write_wrap {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.suggest_box .comment_write_wrap textarea {
+    width: 90%;
+    height: 80px;
+    font-size: 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 10px;
+}
+.suggest_box .comment_write_wrap button {
+    font-size: 12px;
+    color: #9d9d9d;
+}
