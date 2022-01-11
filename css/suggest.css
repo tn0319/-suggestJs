@@ -1,8 +1,20 @@
+.f_b {
+    font-weight: 700;
+}
+.f_c_main {
+    color: #e94428;
+}
 .suggest_con {
-    background: #f7f7f7;
+    background: #ddd;
     padding: 20px;
 }
+.suggest_w_con {
+    background: #ddd;
+    padding: 20px;
+    height: 100vh;
+}
 .suggest_wrap {
+    position: relative;
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
@@ -11,7 +23,41 @@
     width: 100%;
     border-radius: 10px;
     background: #fff;
-    padding: 40px 20px 20px;
+    padding: 30px 20px 20px;
+}
+.suggest_w_con .suggest_wrap {
+    height: 100vh;
+}
+.suggest_w_box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+    padding: 20px 30px 40px;
+}
+.suggest_w_box textarea{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 10px;
+}
+.suggest_w_box button {
+    float: right;
+    font-size: 12px;
+    color: #9d9d9d;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    padding: 4px 8px;
+    margin-top: 8px;
+}
+.suggest_w_box .txt {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 80px;
+    line-height: 20px;
 }
 .suggest_box + .suggest_box {
     margin-top: 20px;
@@ -19,6 +65,11 @@
 .suggest_box .txt_wrap {
     padding-bottom: 40px;
     border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+}
+.suggest_box .txt_wrap .date {
+    display: block;
+    font-size: 12px;
     margin-bottom: 10px;
 }
 .suggest_box .info_wrap {
